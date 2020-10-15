@@ -2,9 +2,10 @@
 
 .acontact{
     text-align: center;
-    font-size: 200%;
+    font-size: 125%;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 3em;
 }
     /*Increases size of first letter*/
 
@@ -12,3 +13,39 @@
     font-size: 200%;
 }
 
+form{
+    display:block;
+    border: 2px solid;
+    border-color: darkgray;
+    margin-left:20%;
+    margin-right:20%;
+    background-color:whitesmoke;
+    border-radius: 4px;
+}
+
+form p{
+    
+    margin-left: 1em;
+}
+
+form label{
+    margin: 8p
+}
+
+
+input[type=textarea]{
+    
+    width: 95%;
+    height: 100px;
+    padding: 1% 1%;
+    margin: 0.75em
+    
+}
+
+input[type=text]{
+    
+    width: 90%;
+    padding: 1% 1%;
+    margin: 0.75em
+}
+    
