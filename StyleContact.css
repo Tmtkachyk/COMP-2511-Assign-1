@@ -28,11 +28,6 @@ form p{
     margin-left: 1em;
 }
 
-form label{
-    margin: 8p
-}
-
-
 input[type=textarea]{
     
     width: 95%;
@@ -48,4 +43,17 @@ input[type=text]{
     padding: 1% 1%;
     margin: 0.75em
 }
+
+.button{
+    margin-right: 5em;
+    padding: 0.5em 1em;
+}
     
+span{
+    color: red;
+}
+
+.headsup{
+    color:grey;
+    font-size: 80%
+}

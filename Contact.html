@@ -26,13 +26,13 @@
             <img class="logo" src="images/CTNL%20Logo.png" alt="CTN Solutions Logo" />       
         </header>
         
-        <hr>
+        <div></div>
     
         <main>
             
             <article class = "acontact">
             
-            Client satisfaction is the highest priority of CTN solutions. We are committed to providing the best service to all our current and potential clients and would be happy to answer any inquiries.
+            Client satisfaction is the highest priority of CTN solutions. We are committed to providing the best service to all our current and potential clients and would be happy to answer any inquiries. Please make use of our contact form below.
                 
             </article>
            
@@ -40,19 +40,19 @@
                 <input type="hidden" name="inquiry" value="CTN Contact Form"/>
                 
                 <p>
-                    <label> Subject*:
+                    <label> Subject<span>*</span>:
                             <input name="subject" type="text" maxlength="50" required />
                     </label>
                 </p>
                 
                 <p>
-                    <label> Message*:
+                    <label> Message<span>*</span>:
                             <input name="message" type="textarea" required />
                     </label>               
                 </p>
                 
                 <p>
-                    <label> Email*:
+                    <label> Email<span>*</span>:
                             <input name="email" type="email" pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}" placeholder="someone@example.com" required />
                     </label>
                     
@@ -91,11 +91,16 @@
                         <input name="date" type="date" />
                     </label>
                 </p>
+                               
                 
                 <p>
-                <input type = "submit" value = "submit">
+                <input class = "button" type = "submit" value = "Submit"/>
+                <input class = "button" type = "reset" value = "Clear"/>                                    
                 </p>
                 
+                <p class="headsup">
+                Sections marked with <span>*</span> are mandatory
+                </p>
             
             </form>
             
@@ -104,7 +109,9 @@
         </main>
     
         <footer>
-        <!--- WIP footer --->
+            <p>
+                CTN Solutions 2020 - Alexander Tallman & Travis Tkachyk - COMP-2511-001
+            </p>
         </footer>
         
         

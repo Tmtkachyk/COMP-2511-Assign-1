@@ -4,6 +4,10 @@ ul {
     padding: 0;
     overflow: hidden;
     list-style-type: none;   
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
 }
 
 li {
@@ -33,15 +37,28 @@ li a:hover {
 .logo{
     height: 6em;
     width: 12em;
-    margin: 0.8em;
+    margin: 1em;
     
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top:3em;
 }
 
 
 
-hr{
-    margin-bottom: 3em;
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    
+}
+
+footer p{
+    
+margin:0.5%
 }
