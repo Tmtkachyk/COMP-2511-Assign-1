@@ -2,24 +2,102 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"> <!--void tag-->
-        <title>My Document</title>
+        <title>CTN Solutions - Contact</title>
         <link rel="stylesheet" href="Style.css" />
+        <link rel="stylesheet" href="StyleContact.css"/>
     </head>
+    
+
+    
     
     <body>
         
-        <header>
+         <!-- This is the nav bar for the pages -->
+        
+        <nav>
             <ul>
-                <li><a href ="Home.html">Home</a></li>
+                <li><a href ="Home.html">Home</a></li>           
+                <li><a href ="Services.html">Services</a></li>  
                 <li><a class="active" href ="Contact.html">Contact</a></li>
-                <li><a href ="Services.html">Services</a></li>
-            
             </ul>
-        </header> 
+        </nav> 
+        
+        <header>          
+            <img class="logo" src="images/CTNL%20Logo.png" alt="CTN Solutions Logo" />       
+        </header>
+        
+        <hr>
     
+        <section>
+            
+            <article class = "acontact">
+            
+            Here at CTN Solutions, client satisfaction is our highest priority. Something businessy about how we would love to have you contact us please and thank you. WIP. Can probably put external link in here if we need to.
+                
+            </article>
+           
+            <form method="post" action="mailto:atall667@mtroyal.ca">
+                <input type="hidden" name="inquiry" value="CTN Contact Form"/>
+                
+                <p>
+                    <label> Subject*:
+                            <input name="subject" type="text" size="50" maxlength="60" required />
+                    </label>
+                </p>
+                
+                <p>
+                    <label> Message*:
+                            <input name="message" type="textarea" required />
+                    </label>               
+                </p>
+                
+                <p>
+                    <label> Email*:
+                            <input name="email" type="email" pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}" placeholder="someone@example.com" required />
+                    </label>
+                    
+                    <label>Phone:
+                            <input name="phone" type="tel" pattern=“[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}” placeholder="###-###-####" />
+                    </label>
+                </p>
+                
+                <p>
+                    Are you already a Client of ours?
+                    
+                    <label>Yes
+                        <input name="clientcheck" type="radio" value="yes" checked />
+                    </label>
+                    
+                    <label>No
+                        <input name="clientcheck" type="radio" value="no" />
+                    </label>
+                </p>
+                
+                <p>
+                What is the best option to reach out to you, if neccessary?
+                    
+                    <label>Email
+                        <input name="contact" type="checkbox" value="email" />
+                    </label>
+                
+                    <label>Phone
+                        <input name="contact" type="checkbox" value="phone" />
+                    </label>
+                        
+                </p>
+                
+            
+            </form>
+            
+            
+           
+        </section>
     
-    
-    
+        <footer>
+        <!--- WIP footer --->
+        </footer>
+        
+        
     </body>
 
 

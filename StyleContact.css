@@ -1,0 +1,14 @@
+    /*Aligns text for contact paragraph to center*/
+
+.acontact{
+    text-align: center;
+    font-size: 200%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+    /*Increases size of first letter*/
+
+.acontact::first-letter{
+    font-size: 200%;
+}
+

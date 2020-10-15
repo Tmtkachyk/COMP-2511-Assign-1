@@ -1,10 +1,9 @@
 ul {
-
-    margin: 0;
-    background-color: black;
+    background-color: grey;
+    margin: 0;    
     padding: 0;
     overflow: hidden;
-    list-style-type: none;
+    list-style-type: none;   
 }
 
 li {
@@ -14,14 +13,35 @@ li {
 li a {
     display: block;
     color: white;
-    text-decoration: none;
-    padding: 14px 16px
+    text-decoration: none;  
+    padding: 0.4em 2em;
+    background-color: grey;
+    font-weight: bold;
 }
 
 li a:hover {
-    background-color:darkgray;
+    background-color:darkslateblue;
 }
 
 .active { 
-    background-color:aqua;
+    background-color: lightsteelblue;
+    
+}
+
+    /* This is to center the logo and set size --> */
+
+.logo{
+    height: 6em;
+    width: 12em;
+    margin: 0.8em;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+hr{
+    margin-bottom: 3em;
 }
