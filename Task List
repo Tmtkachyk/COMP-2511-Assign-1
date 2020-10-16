@@ -1,0 +1,34 @@
+Structural Requirements
+1.       Logo ALEX
+2.       Nav Bar TRAVIS
+3.       Page titles ALEX
+4.       Relevant Content ALEX/TRAVIS
+5.       META tags for each page TRAVIS
+6.       Photo enclosed in a <figure> with a <figurecaption> (not logo) TRAVIS
+·         must define alt attributes for accessibility
+7.       HTML comment ALEX
+8.       One external link to another website that opens in a new tab TRAVIS
+9.       one link to another place on the same page TRAVIS
+10.   a table with a merged (spanned) cell TRAVIS
+11.   use of <article> <header> <main> <footer> on each page TRAVIS/ALEX
+12.   contact form ALEX
+·         A mandatory input box to get user’s email address. Include a place holder to show the valid format and a pattern to validate the input.
+·         An optional box to get user’s telephone number. Must include a place holder to show the valid format and a pattern to validate the input.
+·         Radio buttons with at least 2 different options.
+·         Checkboxes with at least 2 different options to select.
+·         A reset button that clears all form inputs
+·         An input element that accepts date input.
+·         A submit button that submits the form to an email address
+ 
+ 
+CSS Requirements
+1. Navigation menu: In every page, the menu item of the current page must be styled differently. (e.g. special color to indicate the user is at this menu item’s page)
+2. Use the first-letter pseudo element selector to style a first letter of (at least) one of your paragraphs differently.
+3. Use a pseudo class selector of your choice in one of your pages.
+4. Use a contextual selector of your choice in one of your pages.
+ 5. Use an attribute selector of your choice in one of your pages.
+6. Style your table using CSS properties to have striped table format (i.e., style even and odd rows with different colors. You should not use inline styling for this!
+7. Float an image to the right side of a paragraph of your choice in your Website.TRAVIS
+8. Uses consistent design for the header and footer area in all pages. The whole website should have a professional look and design.
+9. Use external CSS files to style your Website. Include all your CSS files inside a folder called “style” and include them in the section of your HTML files.
+10. All pages must use consistent font, margin, padding. These must be defined using a general CSS file shared by all pages. Page-specific styles should be defined in separate CSS files. Note that you can include multiple CSS files for your HTML files.
