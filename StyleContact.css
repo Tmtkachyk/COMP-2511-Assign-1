@@ -28,7 +28,7 @@ form p{
     margin-left: 1em;
 }
 
-input[type=textarea]{
+textarea{
     
     width: 95%;
     height: 100px;
