@@ -28,7 +28,7 @@ form p{
     margin-left: 1em;
 }
 
-input[type=textarea]{
+textarea{
     
     width: 95%;
     height: 100px;
@@ -39,9 +39,9 @@ input[type=textarea]{
 
 input[type=text]{
     
-    width: 90%;
+    width: 89.2%;
     padding: 1% 1%;
-    margin: 0.75em
+    margin: 0.7em
 }
 
 .button{
