@@ -1,0 +1,93 @@
+
+/* For small size */
+    
+.header{
+        height: 5%;
+        position:fixed;
+        width:100%;
+        top: 0;
+        left: 0;
+        background-color:grey;
+        padding: 20px 10px;
+        overflow:hidden;
+        min-height: 40px;
+}
+    
+/*Sets size and location of logo in header*/
+.logo{
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        width: 150px;
+        margin: 0px;
+}
+
+/*Makes the nav element a grid to hold the two menu buttons so that it can be easily moved for larger sizes */
+nav{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-gap:10%;
+    width:8%;
+    min-width: 100px;
+    position:absolute;
+    top: 5%;
+    left:5%;
+    height:80%;
+    
+}
+
+/*sets style for nav links*/
+nav a{
+    text-decoration: none;
+    background-color:lightgrey;
+    border: 1px solid black;
+    color:black;
+    font-family:sans-serif;
+    text-align:center;
+    margin-top:10px
+    border-style:black groove;
+    padding:5%;
+    width:80%;
+}
+
+
+/*changes color of background on hover for links*/
+a:hover{
+    background-color:lightblue;
+}
+
+
+
+
+/* For medium size */
+@media (min-width: 426px) {
+    
+    /*places logo on left side of header bar*/
+    .logo{
+        margin: 0px 0px 0px 20px;
+        left: 0%;
+        transform:translate(0, -50%);
+    }
+    /*places nav buttons horizontally aligned on right side of bar*/
+    nav{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        left:auto; 
+        right:10%;
+        top:30%;
+        width:200px;
+        height:40%;
+    }
+
+}
+
+/* For large size */
+@media (min-width: 800px) {
+    
+    
+    
+    
+}
