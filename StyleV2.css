@@ -1,6 +1,11 @@
 
 /* For small size */
-    
+body{
+    margin:0;
+    padding:0;
+    position:relative;
+}    
+
 .header{
         height: 5%;
         position:fixed;
@@ -11,6 +16,7 @@
         padding: 20px 10px;
         overflow:hidden;
         min-height: 40px;
+        margin-bottom: 20px;
 }
     
 /*Sets size and location of logo in header*/
@@ -59,7 +65,13 @@ a:hover{
     background-color:lightblue;
 }
 
+/*sets area for first section*/
 
+.firstsec{
+    width:100%;
+    margin-top:100px;
+    background-color:lightgrey;
+}
 
 
 /* For medium size */
