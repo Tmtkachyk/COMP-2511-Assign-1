@@ -16,7 +16,6 @@ body{
         padding: 20px 10px;
         overflow:hidden;
         min-height: 40px;
-        margin-bottom: 20px;
 }
     
 /*Sets size and location of logo in header*/
@@ -66,14 +65,47 @@ a:hover{
 }
 
 /*sets area for first section*/
-
 .firstsec{
     width:100%;
+<<<<<<< HEAD
     margin-top:100px;
     background-color:lightgrey;
     text-align: center;
+=======
+    margin-top:120px;
+    background-color:lightsteelblue;
+    padding:10px;
+    height:400px;
 }
 
+/*sets text alignment for first section*/
+.firstsec h1{   
+    text-align:center;
+}
+
+.firstsec h2{
+    text-align:center;
+}
+/*sets the lines shown in first box*/
+.wideline{
+    width:60%;
+    color:black;
+>>>>>>> eabd8e37a712d30c7e6a695ff6508935ee2cb15e
+}
+
+.thinline{
+    width:50%;
+    color:black;
+}
+/*sizing and positioning for relevent image*/
+.relevantimg{
+     position: relative;
+        left:50%;
+    transform:translate(-50%);
+        width:200px;
+        height:200px;
+      
+}
 
 
 .grid-container {
