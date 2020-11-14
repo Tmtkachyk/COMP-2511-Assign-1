@@ -71,11 +71,54 @@ a:hover{
     width:100%;
     margin-top:100px;
     background-color:lightgrey;
+    text-align: center;
 }
 
 
+
+.grid-container {
+    width: 90%;
+    margin-top: 20px;
+    display: grid;
+    gap: 10px 10px;
+    margin-left:5%;
+    
+grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "c1 c1"
+    "c2 c2"
+    "c3 c3"
+    "c4 c4";
+}
+    
+.c1 {
+    grid-area: c1;
+    background-color: grey;
+}
+
+.c2 {
+    grid-area: c2;
+    background-color: grey;
+}
+
+.c3 {
+    grid-area: c3;
+    background-color: grey;
+}
+
+.c4 {
+    grid-area: c4;
+    background-color: grey;
+}
+
+
+
+
+
 /* For medium size */
-@media (min-width: 426px) {
+@media (min-width: 800px) {
     
     /*places logo on left side of header bar*/
     .logo{
@@ -93,13 +136,20 @@ a:hover{
         width:200px;
         height:40%;
     }
+    
+.grid-container {
+    width: 90%;
+    display: grid;
+
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+        "c1 c2"
+        "c3 c4";
+}
+    
 
 }
 
-/* For large size */
-@media (min-width: 800px) {
-    
-    
-    
-    
-}
