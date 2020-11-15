@@ -1,0 +1,367 @@
+
+/* For small size */
+body{
+    margin:0;
+    padding:0;
+    position:relative;
+}    
+
+.header{
+        height: 5%;
+        position:fixed;
+        width:100%;
+        top: 0;
+        left: 0;
+        background-color:grey;
+        padding: 20px 10px;
+        overflow:hidden;
+        min-height: 40px;
+}
+    
+/*Sets size and location of logo in header*/
+.logo{
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        width: 150px;
+        margin: 0px;
+}
+
+/*Makes the nav element a grid to hold the two menu buttons so that it can be easily moved for larger sizes */
+nav{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-gap:10%;
+    width:8%;
+    min-width: 100px;
+    position:absolute;
+    top: 5%;
+    left:5%;
+    height:80%;
+    
+}
+
+/*sets style for nav links*/
+nav a{
+    text-decoration: none;
+    background-color:lightgrey;
+    border: 1px solid black;
+    color:black;
+    font-family:sans-serif;
+    text-align:center;
+    margin-top:10px
+    border-style:black groove;
+    padding:5%;
+    width:80%;
+}
+
+
+/*changes color of background on hover for links*/
+a:hover{
+    background-color:lightblue;
+}
+
+/*sets area for first section*/
+.firstsec{
+    width:100%;
+    margin-top:100px;
+    background-color:lightgrey;
+    text-align: center;
+    margin-top:120px;
+    background-color:white;
+    padding:10px;
+    height:400px;
+}
+
+/*sets text alignment for first section*/
+.firstsec h1{   
+    text-align:center;
+}
+
+.firstsec h2{
+    text-align:center;
+}
+/*sets the lines shown in first box*/
+.wideline{
+    width:60%;
+    color:black;
+
+}
+
+.thinline{
+    width:50%;
+    color:black;
+}
+/*sizing and positioning for relevent image*/
+.relevantimg{
+        width:200px;
+        height:200px;
+      
+}
+
+
+.grid-container {
+
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 10px 10px;
+    margin-left:5%;
+    justify-content: center;
+    width:90%;
+
+
+
+    
+grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "c1 c1"
+    "c2 c2"
+    "c3 c3"
+    "c4 c4";
+}
+    
+.c1 {
+    grid-area: c1;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+    margin-left:auto;
+
+}
+
+.c2 {
+    grid-area: c2;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+}
+
+.c3 {
+    grid-area: c3;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+    margin-left:auto;
+}
+
+.c4 {
+    grid-area: c4;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+}
+
+
+/*Aligns text for contact paragraph to center*/
+
+.acontact{
+    text-align: center;
+    font-size: 125%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 3em;
+}
+
+
+form{
+    display:block;
+    border: 2px solid;
+    border-color: darkgray;
+    background-color:whitesmoke;
+    border-radius: 4px;
+    width: 50%;
+    min-width: 345px;
+    margin: 100px auto;
+    
+}
+
+form p{
+    
+    margin: 1em;
+}
+
+.contacttitle{
+    font-family:sans-serif;
+    font-weight:bold;
+    text-align:center;
+}
+
+textarea{
+    
+    width: 95%;
+    height: 100px;
+    padding: 1% 1%;
+    margin: 0.75em
+    
+}
+
+.buttonsubmit{
+    margin: 5px;
+    padding: 0.5em 1em;
+    float:left;
+}
+
+
+.buttonreset{
+    margin: 5px;
+    padding: 0.5em 1em;
+    float:right;
+}
+    
+span{
+    color: red;
+}
+
+.headsup{
+    color:grey;
+    font-size: 80%;
+    clear:left;
+}
+
+#cf {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+footer {
+    width:100%;
+    position:fixed;
+    background-color:grey;
+    left: 0%;
+    bottom:0;
+    text-align:center;
+    height:2.5%;
+}
+
+
+
+/* For medium size */
+@media (min-width: 800px) and (max-width: 1600px) {
+    
+    /*places logo on left side of header bar*/
+    .logo{
+        margin: 0px 0px 0px 20px;
+        left: 0%;
+        transform:translate(0, -50%);
+    }
+    /*places nav buttons horizontally aligned on right side of bar*/
+    nav{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        left:auto; 
+        right:10%;
+        top:30%;
+        width:200px;
+        height:40%;
+    }
+    
+    
+    /*changes top margin between header and firstsec for larger device size*/
+    .firstsec{
+        
+        margin-top:70px;
+    }
+    
+.grid-container {
+    width:90%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "c1 c2"
+        "c3 c4";  
+}   
+}
+
+
+/* For Large size */
+@media (min-width: 1601px){
+    
+    /*places logo on left side of header bar*/
+    .logo{
+        margin: 0px 0px 0px 20px;
+        left: 0%;
+        transform:translate(0, -50%);
+    }
+    /*places nav buttons horizontally aligned on right side of bar*/
+    nav{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        left:auto; 
+        right:10%;
+        top:30%;
+        width:200px;
+        height:40%;
+    }
+    
+    
+    /*changes top margin between header and firstsec for larger device size*/
+    .firstsec{
+        
+        margin-top:70px;
+    }
+    
+.grid-container {
+    width: 90%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "c1 c2"
+        "c3 c4";  
+}
+    
+    
+.c1 {
+    grid-area: c1;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+    
+
+
+}
+    
+.c2 {
+    grid-area: c2;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+
+}
+
+.c3 {
+    grid-area: c3;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+}
+
+.c4 {
+    grid-area: c4;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
+    max-width: 700px;
+}
+
+
+}
+
+
+
