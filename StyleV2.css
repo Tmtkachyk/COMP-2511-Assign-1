@@ -67,11 +67,9 @@ a:hover{
 /*sets area for first section*/
 .firstsec{
     width:100%;
-<<<<<<< HEAD
     margin-top:100px;
     background-color:lightgrey;
     text-align: center;
-=======
     margin-top:120px;
     background-color:lightsteelblue;
     padding:10px;
@@ -90,7 +88,7 @@ a:hover{
 .wideline{
     width:60%;
     color:black;
->>>>>>> eabd8e37a712d30c7e6a695ff6508935ee2cb15e
+
 }
 
 .thinline{
@@ -109,7 +107,7 @@ a:hover{
     width: 90%;
     margin-top: 20px;
     display: grid;
-    gap: 10px 10px;
+    grid-gap: 10px 10px;
     margin-left:5%;
     
 grid-template-columns: 1fr 1fr;
@@ -122,24 +120,32 @@ grid-template-columns: 1fr 1fr;
     "c4 c4";
 }
     
-.c1 {
+.c1{
     grid-area: c1;
-    background-color: grey;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
 }
 
 .c2 {
     grid-area: c2;
-    background-color: grey;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
 }
 
 .c3 {
     grid-area: c3;
-    background-color: grey;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
 }
 
 .c4 {
     grid-area: c4;
-    background-color: grey;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius:10px;
 }
 
 
@@ -152,11 +158,7 @@ grid-template-columns: 1fr 1fr;
     margin-right: 25%;
     margin-bottom: 3em;
 }
-    /*Increases size of first letter*/
 
-.acontact::first-letter{
-    font-size: 200%;
-}
 
 form{
     display:block;
@@ -164,14 +166,21 @@ form{
     border-color: darkgray;
     background-color:whitesmoke;
     border-radius: 4px;
-    width: 600px;
-    margin: 0 auto;
-
+    width: 50%;
+    min-width: 345px;
+    margin: 100px auto;
+    
 }
 
 form p{
     
-    margin-left: 1em;
+    margin: 1em;
+}
+
+.contacttitle{
+    font-family:sans-serif;
+    font-weight:bold;
+    text-align:center;
 }
 
 textarea{
@@ -183,16 +192,17 @@ textarea{
     
 }
 
-input[type=text]{
-    
-    width: 89.2%;
-    padding: 1% 1%;
-    margin: 0.7em
+.buttonsubmit{
+    margin: 5px;
+    padding: 0.5em 1em;
+    float:left;
 }
 
-.button{
-    margin-right: 5em;
+
+.buttonreset{
+    margin: 5px;
     padding: 0.5em 1em;
+    float:right;
 }
     
 span{
@@ -201,7 +211,8 @@ span{
 
 .headsup{
     color:grey;
-    font-size: 80%
+    font-size: 80%;
+    clear:left;
 }
 
 #cf {
@@ -210,7 +221,15 @@ span{
 
 }
 
-
+footer {
+    width:100%;
+    position:fixed;
+    background-color:grey;
+    left: 0%;
+    bottom:0;
+    text-align:center;
+    height:2.5%;
+}
 
 
 
@@ -234,6 +253,13 @@ span{
         height:40%;
     }
     
+    
+    /*changes top margin between header and firstsec for larger device size*/
+    .firstsec{
+        
+        margin-top:70px;
+    }
+    
 .grid-container {
     width: 90%;
     display: grid;
@@ -247,6 +273,7 @@ span{
         "c3 c4";
 }
     
+
 
 }
 

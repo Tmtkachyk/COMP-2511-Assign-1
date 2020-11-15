@@ -32,7 +32,7 @@
              
         </div>
         
-        <div class="grid-container">
+        <div class="grid-container" name="services">
          
             <div class="c1">
                 <h3>Web Design</h3>
@@ -78,10 +78,8 @@
             <form method="post" action="mailto:atall667@mtroyal.ca">
                 <input type="hidden" name="inquiry" value="CTN Contact Form"/>
                 
-                <p>
-                    <label> Subject<span>*</span>:
-                            <input name="subject" type="text" maxlength="50" required />
-                    </label>
+                <p class="contacttitle">
+                    CONTACT US
                 </p>
                 
                 <p>
@@ -92,50 +90,17 @@
                 </p>
                 
                 <p>
-                    <label> Email<span>*</span>:
-                            <input name="email" type="email" pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}" placeholder="someone@example.com" required />
+                    <label> Email:
+                            <input name="email" type="email" placeholder="someone@example.com"/>
                     </label>
                     
-                    <label>Phone:
-                            <input name="phone" type="tel" pattern=“[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}” placeholder="###-###-####" />
-                    </label>
                 </p>
                 
-                <p>
-                    Are you already a Client of ours?
-                    
-                    <label>Yes
-                        <input name="clientcheck" type="radio" value="yes" checked />
-                    </label>
-                    
-                    <label>No
-                        <input name="clientcheck" type="radio" value="no" />
-                    </label>
-                </p>
+                      
                 
                 <p>
-                What is the best option to reach out to you, if neccessary?
-                    
-                    <label>Email
-                        <input name="contact" type="checkbox" value="email" />
-                    </label>
-                
-                    <label>Phone
-                        <input name="contact" type="checkbox" value="phone" />
-                    </label>
-                       
-                </p>
-                
-                <p>
-                    <label> If you wish for us to contact you directly, what day works best?
-                        <input name="date" type="date" />
-                    </label>
-                </p>
-                               
-                
-                <p>
-                <input class = "button" type = "submit" value = "Submit"/>
-                <input class = "button" type = "reset" value = "Clear"/>                                    
+                <input class = "buttonsubmit" type = "submit" value = "Submit"/>
+                <input class = "buttonreset" type = "reset" value = "Clear"/>                                    
                 </p>
                 
                 <p class="headsup">
@@ -146,7 +111,7 @@
             </div>
         
         <footer>
-          
+          CTN Solutions 2020 - Alexander Tallman & Travis Tkachyk - COMP-2511-001
         </footer>
     
         
