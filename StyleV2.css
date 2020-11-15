@@ -99,9 +99,6 @@ a:hover{
 }
 /*sizing and positioning for relevent image*/
 .relevantimg{
-     position: relative;
-        left:50%;
-    transform:translate(-50%);
         width:200px;
         height:200px;
       
@@ -146,6 +143,74 @@ grid-template-columns: 1fr 1fr;
 }
 
 
+/*Aligns text for contact paragraph to center*/
+
+.acontact{
+    text-align: center;
+    font-size: 125%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 3em;
+}
+    /*Increases size of first letter*/
+
+.acontact::first-letter{
+    font-size: 200%;
+}
+
+form{
+    display:block;
+    border: 2px solid;
+    border-color: darkgray;
+    background-color:whitesmoke;
+    border-radius: 4px;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+form p{
+    
+    margin-left: 1em;
+}
+
+textarea{
+    
+    width: 95%;
+    height: 100px;
+    padding: 1% 1%;
+    margin: 0.75em
+    
+}
+
+input[type=text]{
+    
+    width: 89.2%;
+    padding: 1% 1%;
+    margin: 0.7em
+}
+
+.button{
+    margin-right: 5em;
+    padding: 0.5em 1em;
+}
+    
+span{
+    color: red;
+}
+
+.headsup{
+    color:grey;
+    font-size: 80%
+}
+
+#cf {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
 
 
 
@@ -184,4 +249,6 @@ grid-template-columns: 1fr 1fr;
     
 
 }
+
+
 
